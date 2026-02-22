@@ -103,7 +103,7 @@ This course introduces a broad range of unsupervised learning methods applied to
 ```bash
 # Clone the repository
 git clone https://github.com/jep9731/academic-MSDS411-coursework.git
-cd msds411-unsupervised-learning
+cd academic-MSDS411-coursework
 
 # Create and activate environment
 conda env create -f environment.yml
