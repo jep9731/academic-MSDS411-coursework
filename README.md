@@ -55,23 +55,10 @@ This course introduces a broad range of unsupervised learning methods applied to
 │   ├── assignment_06_association_rules/
 │   ├── assignment_07_visualization/
 │   └── assignment_08_anomaly_detection/
-├── 📁 projects/
-│   ├── midterm_project/
-│   └── final_project/
 ├── 📁 data/
 │   ├── raw/
 │   └── processed/
-├── 📁 notebooks/
-│   ├── 01_pca_and_factor_analysis.ipynb
-│   ├── 02_cluster_analysis.ipynb
-│   ├── 03_block_clustering.ipynb
-│   ├── 04_log_linear_association_rules.ipynb
-│   ├── 05_visualization_mds_tsne.ipynb
-│   └── 06_autoencoders_anomaly_detection.ipynb
-├── 📁 src/
-│   └── utils/                 # Shared helper functions
 ├── requirements.txt
-├── environment.yml
 └── README.md
 ```
 
@@ -81,13 +68,15 @@ This course introduces a broad range of unsupervised learning methods applied to
 
 | Category | Tools |
 |---|---|
-| **Language** | Python 3.9+ |
-| **Core Libraries** | NumPy, Pandas, SciPy |
-| **Machine Learning** | Scikit-learn, MLxtend |
-| **Deep Learning** | TensorFlow / Keras, PyTorch |
-| **Visualization** | Matplotlib, Seaborn, Plotly, Bokeh |
-| **Dimensionality Reduction** | Scikit-learn (PCA, MDS, t-SNE), UMAP |
-| **Notebooks** | Jupyter Lab / Jupyter Notebook |
+| **Language** | R 4.3+ |
+| **Core Libraries** | tidyverse, data.table, matrixStats |
+| **Machine Learning** | caret, tidymodels, cluster, factoextra |
+| **Association Rules** | arules, arulesViz |
+| **Deep Learning** | keras, tensorflow |
+| **Visualization** | ggplot2, lattice, plotly, ggfortify |
+| **Dimensionality Reduction** |stats, Rtsne, umap, factoextra |
+| **Notebooks** | R Markdown, Quarto |
+| **Environment Management** | renv |
 
 ---
 
@@ -95,28 +84,46 @@ This course introduces a broad range of unsupervised learning methods applied to
 
 ### Prerequisites
 
-- Python 3.9+
-- Conda or virtualenv
+- R 4.3+
+- RStudio (recommended)
+- Git
+
+---
 
 ### Installation
-
+#### Clone the Repository
 ```bash
 # Clone the repository
 git clone https://github.com/jep9731/academic-MSDS411-coursework.git
 cd academic-MSDS411-coursework
-
-# Create and activate environment
-conda env create -f environment.yml
-conda activate msds411
-
-# Or using pip
-pip install -r requirements.txt
 ```
 
-### Launch Notebooks
+#### Restore R Environment
+```bash
+# Create and activate environment
+install.packages("renv")
+renv::restore()
+```
+
+#### Install Required Packages Manually (Optional)
 
 ```bash
-jupyter lab
+install.packages(c(
+  "tidyverse",
+  "data.table",
+  "cluster",
+  "factoextra",
+  "caret",
+  "tidymodels",
+  "arules",
+  "arulesViz",
+  "Rtsne",
+  "umap",
+  "keras",
+  "tensorflow",
+  "plotly",
+  "lattice"
+))
 ```
 
 ---
