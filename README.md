@@ -2,7 +2,7 @@
 
 ![Course](https://img.shields.io/badge/Course-MSDS%20411-blue)
 ![Type](https://img.shields.io/badge/Type-Project--Based-brightgreen)
-![Language](https://img.shields.io/badge/Language-Python-yellow)
+![Language](https://img.shields.io/badge/Language-R-yellow)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 > **Master of Science in Data Science — Unsupervised Learning Methods**
